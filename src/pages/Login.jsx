@@ -11,7 +11,7 @@ const LoginCredential = ({ setEnvelopeOpen }) => {
     const [isError, setIsError] = useState(false)
     const [value, setValue] = useState("")
     const cekJawaban = () => {
-        if (value.toLowerCase() === "oden") {
+        if (value.toLowerCase() === "jengkol") {
             setIsError(false)
             setEnvelopeOpen(true)
             gsap.to("#greeting", { duration: 1, opacity: 0, ease: "power2.out", display: "none" })
